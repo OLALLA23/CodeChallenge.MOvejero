@@ -49,5 +49,8 @@
     "react-toastify": "^3.2.1",
     "shallowequal": "^1.1.0",
     "toastr": "^2.1.4"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.vendor.js & webpack & dotnet run"
   }
 }
