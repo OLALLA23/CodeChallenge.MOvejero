@@ -22,24 +22,25 @@ export class PhoneDetails extends React.Component<IProps, {}>{
 
         return (
             <div className="container">
-                <div className="ms-Grid">
-                    <div className="ms-Grid-row">
-                        <div className="ms-Grid-col ms-sm12 ms-md12 ms-lg6">
-                            <h2 className="phone-name"><strong>{this.props.phone.NamePhone}</strong></h2>
-                            <img className="foto" src={this.props.phone.Image} alt="" />
+                <div className="divider-30"></div>
+                <div className="row">
+                    <div className="caja2" >
+                        <div className="cajadetails">
+                            <h1 ><strong>{this.props.phone.NamePhone}</strong></h1>
+                            <div>
+                                <img className="img" src={this.props.phone.Image} alt="" />
+                            </div>
                             <b>{this.props.phone.Description}</b>
-                        </div>                       
-                            <div>                                
-                                <div>
-                                    <div className="centered">
-                                        <button className="btn btn-grey w40"
-                                            onClick={this.clickHandler} >VOLVER</button>
-                                    </div>
-                                </div>
+                            <div className="divider-30"></div>
+                            <div>
+                                <button className="btn btn-grey w40 "
+                                    onClick={this.clickHandler}  > VOLVER</button>
+                                <div className="divider-30"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
         );
     }

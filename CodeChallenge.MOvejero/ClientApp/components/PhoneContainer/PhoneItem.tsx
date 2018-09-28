@@ -17,20 +17,15 @@ export class PhoneItem extends React.Component<IProps, {}>{
     public render() {
 
         return (
-            <div className="row">
-                <div className="col-sm-3">
-                    <div>
-                    </div>
-                    <div className="caja">
-                        <b className="phone-name">{this.props.phones.NamePhone}</b>
-                        <img className="foto" src={this.props.phones.Image} alt="" />
-                        <div><b className="phone-price">{this.props.phones.Price}€</b></div>
-                        <button type="button" className="btn"
-                            onClick={() => this.props.changeHandler(this.props.phones.IdPhone)}> Ver más  </button>
-                    </div>
-                </div>
 
+            <div>
+                <h2><b>{this.props.phones.NamePhone}</b></h2>
+                <img className="foto" src={this.props.phones.Image} alt="" />
+                <div><b className="phone-price">{this.props.phones.Price}€</b></div>
+                <button type="button" className="btn btn-grey w40"
+                    onClick={() => this.props.changeHandler(this.props.phones.IdPhone)}> VER MÁS  </button>
             </div>
+
 
         );
     }

@@ -65,7 +65,7 @@ namespace CodeChallengeMol.API.Phones
             list.Add(new DetailsPhone
             {
                 IdPhone="6",
-                NamePhone = "Xiaomi Mi A1",
+                NamePhone = "Xiaomi Mi A1 Full",
                 Image = "https://img.pccomponentes.com/articles/14/146167/1.jpg",
                 Color = "Dorado",
                 Price = 179,

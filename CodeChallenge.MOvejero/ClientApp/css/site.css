@@ -1,55 +1,17 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿
+body {
+    background-image: url(https://cdn-images-1.medium.com/max/2000/1*8FZC2t0f-TDGG4z8Ynqong.jpeg);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'open sans';
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
-
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
-
-btn {
-    font-family: 'ferrovial-bold', sans-serif;
-    font-size: 16px;
-    color: #fff;
-    background-color: #ffc700;
-}
-
-
-.divider-50 {
-    height: 50px;
-}
-
-.phone-name {
-    font-size: 22px;
-    color: #393c45;
-    align-items: flex-start;
+.divider-30 {
+    height: 30px;
 }
 
 .phone-price {
@@ -61,15 +23,31 @@ btn {
 .foto {
     width: 150px;
 }
+.img {
+    width: 300px;
+}
+.stylep {
+    background-color: black;
+    border: 5px;
+    box-shadow: 0px 3px 6px;
+    color: white;
+    padding-left:50px;
+    padding-top:50px;
+    padding-bottom:20px;
+    padding-right:50px;
+}
 
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    font-family: 'open sans';
+.title {
+    padding-top: 0px;
+    font-size: 80px;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 135px;
+    padding-right: 50px;
+}
+.container2 {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    justify-content: center;    
 }
 
 .button {
@@ -82,7 +60,6 @@ body {
 }
 
 btn {
-    font-family: 'ferrovial-bold', sans-serif;
     font-size: 16px;
     color: black;
     box-shadow: 1px 1px 4px 0 #999999;
@@ -100,9 +77,57 @@ btn {
 
 .caja {
     margin: 0px;
-    padding: 14px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
     background-color: white;
     box-shadow: 0px 3px 6px;
+    text-align:center;
+    width:25%;
+    border:5px ;
+    float:left;
+}
+@media screen and (max-width: 992px) {
+    .caja {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.caja2 {
+    margin: 0px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0px 3px 6px;
+    text-align: center;
+    float: right;
+}
+
+.caja3 {
+    width: 350px;
+    height: 500px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0px 3px 6px;
+    text-align: center;
+}
+
+.cajadetails {
+    margin: 0px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0px 3px 6px;
+    text-align: center;
 }
 
 .headerBar {
@@ -139,3 +164,9 @@ btn {
         height: 100%;
         width: auto;
     }
+
+.jumbo {
+    background-image: url(https://cdn-images-1.medium.com/max/2000/1*8FZC2t0f-TDGG4z8Ynqong.jpeg);
+    color: #ffffff;
+    padding-top:30px;
+}

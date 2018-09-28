@@ -55,41 +55,43 @@ export class ListPhone extends React.Component<IProps, IPhoneState>{
     renderList = (): any => {
         return (
             <div>
-                <div className="paddingLateral headerBar">
-
-                    <div className="container">
-                        <div className="ms-Grid">
-                            <div className="ms-Grid-row">
-                                <label>PHONES</label>
-                            </div>
+                <div className="jumbotron jumbo">
+                    <div className="container container2">
+                        <div className="title"> Hello, Phones!</div>
+                        <div className="stylep">
+                            <p>Lorem ipsum dolor sit amet, interdum turpis, aliquam dui et, sit pede justo, magna ullamcorper pharetra elit, curabitur lectus leo.
+                             Mi eget nostra amet risus sociis. Ut tristique, elit wisi interdum accumsan.
+                             Sed consectetuer amet rutrum feugiat morbi ante, hac tortor reprehenderit dolor nullam, adipiscing pharetra in, vel mauris eu imperdiet erat.
+                             Lorem ipsum dolor sit amet, interdum turpis, aliquam dui et, sit pede justo, magna ullamcorper pharetra elit, curabitur lectus leo.
+                             Lorem ipsum dolor sit amet, interdum turpis, aliquam dui et, sit pede justo, magna ullamcorper pharetra elit, curabitur lectus leo.
+                            </p>
                         </div>
-
                     </div>
                 </div>
-                <div className="divider-50"></div>
                 <div className="container">
-                    <div className="ms-Grid">
-                        <div className="ms-Grid-row">
-                            <div className="ms-Grid-col ms-sm12 ms-md12 ms-lg6">
-                                {this.props.phones.map((phones) => {
-                                    return (<PhoneItem phones={phones} changeHandler={this.phoneSelect} key={phones.IdPhone} />);
-                                })}
+                    <div className="row">
+                        <div className="caja2" >
+                            <div className="">
+                                <div>
+                                    {this.props.phones.map((phones) => {
+                                        return (<div className="caja"><PhoneItem phones={phones} changeHandler={this.phoneSelect} key={phones.IdPhone} /></div>);
+                                    })}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
+            </div >
         );
     }
     renderComponentItem = (): any => {
         if (this.state.activeLink === 'xx') {
             return (
+
                 <div>
-                    <div className="col">
                     {this.renderList()}
-                <PhoneDetails phone={this.getPhoneById(this.state.selectPhone)} cancelHandler={this.stateCancel} />
-                    </div>
+                    <PhoneDetails phone={this.getPhoneById(this.state.selectPhone)} cancelHandler={this.stateCancel} />
+
                 </div>
             );
         }
@@ -97,7 +99,7 @@ export class ListPhone extends React.Component<IProps, IPhoneState>{
             return (
                 <div>
                     {this.renderList()}
-                    </div>
+                </div>
             );
         }
     }
