@@ -59,11 +59,8 @@ export class ListPhone extends React.Component<IProps, IPhoneState>{
                     <div className="container container2">
                         <div className="title"> Hello, Phones!</div>
                         <div className="stylep">
-                            <p>Lorem ipsum dolor sit amet, interdum turpis, aliquam dui et, sit pede justo, magna ullamcorper pharetra elit, curabitur lectus leo.
-                             Mi eget nostra amet risus sociis. Ut tristique, elit wisi interdum accumsan.
-                             Sed consectetuer amet rutrum feugiat morbi ante, hac tortor reprehenderit dolor nullam, adipiscing pharetra in, vel mauris eu imperdiet erat.
-                             Lorem ipsum dolor sit amet, interdum turpis, aliquam dui et, sit pede justo, magna ullamcorper pharetra elit, curabitur lectus leo.
-                             Lorem ipsum dolor sit amet, interdum turpis, aliquam dui et, sit pede justo, magna ullamcorper pharetra elit, curabitur lectus leo.
+                            <p>"Lorem ipsum dolor sit amet, interdum turpis, aliquam dui et, sit pede justo, magna ullamcorper pharetra elit, curabitur lectus leo.
+                             Mi eget nostra amet risus sociis. Ut tristique, elit wisi interdum. Mi eget nostra amet risus sociis. Mi eget nostra amet risus sociis. Mi eget nostra nostra."                        
                             </p>
                         </div>
                     </div>
@@ -89,9 +86,10 @@ export class ListPhone extends React.Component<IProps, IPhoneState>{
             return (
 
                 <div>
-                    {this.renderList()}
-                    <PhoneDetails phone={this.getPhoneById(this.state.selectPhone)} cancelHandler={this.stateCancel} />
-
+                    {this.renderList()}                    
+                        <div>
+                            <PhoneDetails phone={this.getPhoneById(this.state.selectPhone)} cancelHandler={this.stateCancel} />
+                        </div>
                 </div>
             );
         }
